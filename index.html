@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course Assessment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container my-5">
+    <div class="text-center mb-4">
+      <h1 class="fw-bold">🚀 Welcome to the Course</h1>
+      <p class="lead">Take this short assessment to know your level.</p>
+      <button class="btn btn-primary" onclick="startAssessment()">Start Assessment</button>
+    </div>
+
+    <div id="quiz-container" class="d-none">
+      <div class="card p-4 shadow">
+        <form id="quiz-form">
+          <!-- Question 1 -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">1. What does HTML stand for?</label>
+            <div class="form-check"><input type="radio" name="q1" value="HyperText Markup Language" class="form-check-input"> HyperText Markup Language</div>
+            <div class="form-check"><input type="radio" name="q1" value="HyperText Markdown Language" class="form-check-input"> HyperText Markdown Language</div>
+          </div>
+          <!-- Question 2 -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">2. Which tag is used for inserting a line break in HTML?</label>
+            <div class="form-check"><input type="radio" name="q2" value="<br>" class="form-check-input"> &lt;br&gt;</div>
+            <div class="form-check"><input type="radio" name="q2" value="<lb>" class="form-check-input"> &lt;lb&gt;</div>
+          </div>
+          <!-- Question 3 -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">3. What is the default scripting language in browsers?</label>
+            <div class="form-check"><input type="radio" name="q3" value="JavaScript" class="form-check-input"> JavaScript</div>
+            <div class="form-check"><input type="radio" name="q3" value="Python" class="form-check-input"> Python</div>
+          </div>
+          <!-- Question 4 -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">4. What does CSS stand for?</label>
+            <div class="form-check"><input type="radio" name="q4" value="Cascading Style Sheets" class="form-check-input"> Cascading Style Sheets</div>
+            <div class="form-check"><input type="radio" name="q4" value="Computer Styled Sheets" class="form-check-input"> Computer Styled Sheets</div>
+          </div>
+          <!-- Question 5 -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold">5. Which one is a front-end framework?</label>
+            <div class="form-check"><input type="radio" name="q5" value="React" class="form-check-input"> React</div>
+            <div class="form-check"><input type="radio" name="q5" value="Node.js" class="form-check-input"> Node.js</div>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">Submit</button>
+        </form>
+
+        <div id="result" class="mt-4 text-center fw-bold fs-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
